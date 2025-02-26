@@ -1,0 +1,17 @@
+Debemos tener instalado Python3, 
+
+Paso 1: Actualizar la lista de paquetes 
+
+    Abrir la terminal
+    
+    Escribir sudo apt update 
+
+Paso 2: Instalar Python 
+
+    Escribir sudo apt install python3
+    Escribir la contraseña de administrador del sistema
+    Escribir Y para finalizar la instalación 
+
+Paso 3: Verificar la instalación 
+
+    Escribir python3 --version

@@ -1,0 +1,26 @@
+Para compilar y ejecutar tu código en C en Debian a través de la terminal, sigue estos pasos:
+
+1. Verifica que tienes GCC instalado
+
+Ejecuta el siguiente comando para verificar si tienes el compilador GCC instalado:
+
+    $ gcc --version
+
+Si no está instalado, puedes instalarlo con:
+
+    $ sudo apt update
+    $ sudo apt install gcc -y
+
+2. Compilar el código
+
+Si tienes un archivo llamado programa.c, puedes compilarlo con:
+
+    $ gcc programa.c -o programa
+
+Esto generará un archivo ejecutable llamado programa.
+
+3. Ejecutar el programa
+
+    Para ejecutar el programa compilado, usa:
+
+    ./programa

@@ -1,0 +1,40 @@
+1. Verificar si tienes Java instalado
+
+Ejecuta el siguiente comando para comprobar si tienes el compilador de Java (javac) instalado:
+
+    $ javac -version
+
+Si no está instalado, instálalo con:
+
+    $ sudo apt update
+    $ sudo apt install default-jdk -y
+
+2. Crear el código Java
+
+Guarda tu código en un archivo con extensión .java, por ejemplo Programa.java.
+
+Ejemplo de código (Programa.java):
+
+public class Programa {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, mundo desde Java!");
+    }
+}
+
+3. Compilar el código
+Usa el siguiente comando en la terminal para compilarlo:
+
+    $ javac Programa.java
+
+Esto generará un archivo Programa.class en el mismo directorio.
+
+4. Ejecutar el programa
+
+Después de compilar, ejecuta el programa con:
+
+    $ java Programa
+
+Notas importantes
+
+    Asegúrate de que el nombre del archivo Java coincida con el nombre de la clase (Programa.java debe tener public class Programa).
+    No incluyas la extensión .class al ejecutar (java Programa, no java Programa.class).
