@@ -38,3 +38,101 @@ Notas importantes
 
     Asegúrate de que el nombre del archivo Java coincida con el nombre de la clase (Programa.java debe tener public class Programa).
     No incluyas la extensión .class al ejecutar (java Programa, no java Programa.class).
+
+
+En Windows
+
+Java es gratis
+
+Para saber como comenzar a programar en Java primero debemos saber que es Java. Java  un lenguaje de programación de propósito general propiedad de Oracle y actualmente es uno de los lenguajes de programación mas usados en el mundo. Por lo tanto también uno de los mas demandados del mercado.
+
+
+Características de JAVA
+Simple: Resuelve características de sus predecesores como, aritmética de punteros y gestión de memoria.
+Orientado a objetos: En Java todo son objetos a excepcion de los datos primitivos.
+Lenguaje interpretado : Al compilar Java genera código que después puede ejecutarse en la Maquina Virtual de Java
+Portable: Las aplicaciones Java al Ejecutarse  dentro de la maquina virtual de Java estas aplicaciones pueden ejecutarse en Windows, Linux o Mac mientras tengan la maquina virtual instalada.
+Maquina virtual de Java
+JVM, JDK y JRE
+Una maquina virtual es un software que emula el funcionamiento de una computadora real. Entonces la maquina virtual de java(JVM) es software que emula una computadora dentro de una computadora real esto para que sobre ella corra el entorno de ejecución de java (JRE).
+
+JDK Java Development Kit son una serie de herramientas empaquetadas que nos proporciona Java para desarrollar nuestras aplicaciones .
+
+Para entender mejor  la interacción entre estos conceptos lo ejemplificaremos con la siguiente imagen.
+
+
+
+Si queremos solo ejecutar aplicaciones JAVA solo necesitamos el JRE que tiene dentro la JVM, pero si queremos crear aplicaciones Java debemos instalar el JDK que a su vez trae dentro el JRE y el JVM.
+
+¿Java es Gratis?
+Desde la version 8u212 de Java Oracle cambio el tipo de licencia. Lo que significa puedes seguir programando en ella pero si quieres  desplegar tus aplicaciones en productivo debes pagarle a oracle cierta cantidad de dinero. Ahora existen opciones alternativas al jdk offical de oracle como el Open jdk con el podrás ahorrarte este pago y desplegar en producción completamente gratis.
+
+¿Que necesito para comenzar a programar en Java?
+Para poder programar en Java lo primero que debemos hacer es la preparación del ambiente de desarrollo. si bien lo unico que necesitas para  programar en Java es el JDK, los IDEs te ayudaran y facilitaran el trabajo en gran manera.
+
+¿Qué es un IDE?
+IDE significa Entorno de desarrollo integrado, es decir es un software o programa que nos brinda herramientas para facilitarnos la vida a la hora de crear mas programas.
+
+Un error común es especialmente entre quienes comienzan es pensar que el IDE es el lenguaje de programación en si.
+
+Ejemplos de IDEs
+
+VsCode
+Eclipse
+NetBeans
+Intelli Idea
+Configuración del JDK
+La descarga JDK es bastante simple, lo único que tienes que hacer es elegir la versión y sistema operativo que deseas descargar y tener una cuenta de Oracle la cual es gratuita.
+
+https://www.oracle.com/mx/java/technologies/javase-jdk11-downloads.html
+https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html
+Y su instalación es como la de cualquier otro programa dando clic en siguiente hasta finalizar.
+Variables de entorno
+
+Las variables de entorno son valores que se cargan en memoria del sistema operativo iniciarse. Normalmente almacenan rutas de bibliotecas que necesita el sistema operativo u otros programas en el instalado para funcionar correctamente.
+
+Variables de entorno para Java
+Java para su correcto funcionamiento necesita configures la variable de entorno JAVA_HOME que debe apuntar la carpeta de instalación de JDK.
+Para configurar JAVA_HOME en windows pudes escribir Configuración avanzada del sistema
+
+
+Y en variables de entorno encontraremos el apartado encontraremos el recuadro Variables de sistema donde podemos dar clic en nuevo y buscar la carpeta donde tenemos instalado nuestro JDK
+
+El ultimo paso es agregar a la variable path la variable JAVA_HOME + la carpeta bin sin olvidar poner %% a cada extremo de la variable. Como se muestra en la imagen.
+
+Para probar la correcta instalación abrimos una consola en Windows y escribimos java -version
+
+
+
+En el caso de Windows par instalar Java 
+
+1. Descargar el JDK
+    x64 installer
+        https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
+
+2. Isnatalar el ejecutable.
+
+3. Agregar la la ruta a las variables del entorno de windows
+
+4. En mi Pc vamos a propiedades y escrivimos variables de wntorno
+o edit the system environment variables
+
+5. Pulsr el boton envionment variables y agrgar una nueva
+
+
+El nombre seria algo como JAVA_HOME
+y buscar la ruta C:\Program Files\Java\jdk-23
+
+6. Procedemos a verificar si esta instalada correctamente el entorno de desarrollo de Java.
+    Abrimos una linea de comandos y ejecutamos
+        java -version
+
+No sdebe arrojar la version instalada.
+
+
+
+
+Referencias:
+https://funcionaenmimaquina.com/como-comenzar-a-programar-en-java/
+
+

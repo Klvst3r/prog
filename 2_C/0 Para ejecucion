@@ -24,3 +24,75 @@ Esto generará un archivo ejecutable llamado programa.
     Para ejecutar el programa compilado, usa:
 
     ./programa
+
+
+En windows
+
+Para programar en C en Windows, necesitas un compilador, un editor de código y opcionalmente un entorno de desarrollo integrado (IDE). Aquí te dejo varias opciones según tu preferencia:
+🔹 Opción 1: MinGW + VS Code (Ligero y flexible)
+
+    Instalar MinGW-w64 (Compilador de C y C++ para Windows)
+        Descárgalo desde: https://www.mingw-w64.org/
+        Asegúrate de instalar el compilador gcc.
+        Agrega la ruta de bin (ej. C:\mingw-w64\...\bin) a las Variables de entorno para usarlo en la terminal.
+    Instalar VS Code (Editor de código ligero)
+        Descárgalo desde: https://code.visualstudio.com/
+        Agrega la extensión C/C++ de Microsoft para soporte de sintaxis y depuración.
+    Verifica la instalación
+        Abre una terminal (CMD o PowerShell) y escribe:
+
+        gcc --version
+
+        Si muestra la versión de gcc, está funcionando correctamente.
+
+🔹 Opción 2: Code::Blocks (IDE sencillo)
+
+    Descarga la versión que incluye MinGW desde: https://www.codeblocks.org/downloads/
+    Este IDE ya trae un compilador integrado, así que es una opción rápida para empezar.
+
+🔹 Opción 3: Dev-C++ (IDE clásico, menos recomendable)
+
+    Descárgalo desde: https://bloodshed-dev-c.en.softonic.com/
+    Es un IDE antiguo pero fácil de usar si buscas algo simple.
+
+🔹 Opción 4: Microsoft Visual Studio (Potente pero pesado)
+
+    Descarga Visual Studio 2022 Community desde: https://visualstudio.microsoft.com/
+    Durante la instalación, elige el desarrollo en C++ (incluye el compilador MSVC).
+
+
+
+Para nuestro caso practico vamos a instlarlos de manera manual 
+
+
+Cómo instalar GCC para compilar programas en C desde la consola en Windows
+Danelia
+DaneSanchz
+
+GCC (GNU Compiler Collection) es un conjunto de compiladores para C, C++ y otros lenguajes de programación. Viene instalado por defecto en algunas distribuciones Linux (sistemas *nix) y sistemas UNIX. En este tutorial veremos cómo instalar gcc mediante MinGW para compilar desde la consola en entorno Windows.
+
+    Descarga el instalador de MinGW en la página de MinGW haciendo clic en Download Installer.
+
+    Lo podemos descargar desde         
+        https://sourceforge.net/projects/mingw/files/Installer/
+
+    2. Al finalizar la descarga, busca y ejecuta el instalador.
+    3. Pulsa Continue.
+    4. Cuando haya terminado la instalación, clic en Continue. Te mostrará una pantalla, donde podremos agregar un paquete, elegimos
+    5. El paquete que necesitamos instalar es mingw32-gcc-g++ para compilar programas en C y C++. Le damos clic derecho a dicho paquete y seleccionamos la opción Mark for Installation.
+    6. Ve al menú Installation -> Apply Changes y luego clic en el botón Apply para empezar la instalación, la cual toma pocos segundos. Cuando finalice, clic en el botón Close.
+
+    7. Para ejecutar gcc desde cualquier directorio en la consola, necesitaremos agregar la ruta de la carpeta dónde se encuentran los ejecutables de MinGW en la variable de entorno PATH del sistema. Si recuerdas, la ruta por defecto donde se instaló MinGW es C:\MinGW. Así que añadiremos la carpeta C:\MinGW\bin en el PATH. En Windows 7, debes ir a Inicio, clic derecho en Equipo y luego en Propiedades. Despúes, haces clic en Configuración avanzada del sistema->Variables de entorno… En Windows 10, ir a Inicio -> Sistema-> Configuración avanzada del sistema->Variables de entorno…
+
+    En nuestro caso la ruta fue
+        C:\Program Files\MinGW\bin
+
+    8. Al darle clic en el botón Variables del entorno…, seleccionamos_ Path _en la parte Variables del sistema y presionamos el botón _Editar… _
+
+    9. En el campo Valor de la variable, añadimos un ; al final de la cadena y escribimos la ruta C:\MinGW\bin. Pulsa el botón Aceptar.
+
+    Ahora, ¿cómo sabemos que todo está correcto? Ejecuta el Símbolo del Sistema y una vez abierto, escribe gcc --version. Debería desplegar la versión de gcc:
+
+
+Y listo!, ya puedes compilar tus programas en C independientemente del editor que uses (sea Atom, Sublime Text, Visual Studio Code). 
+
