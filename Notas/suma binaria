@@ -1,0 +1,51 @@
+Algoritmos
+Diagragras de flujo
+Conversiones de decimales a binarios
+Operaciones con binarios
+
+
+Suma en Binario:
+
+0 + 0 = 0
+0 +	1 = 1
+1 + 0 = 1
+1 + 1 = 0 acarreo
+
+
+2 exp 0 = 1
+2 exp 1 = 2
+2 exp 2 = 4
+2 exp 3 = 8
+2 exp 4 = 16
+		32
+		64
+		128
+		256
+		512
+		1024
+
+
+	[4 2 1]
+ 	 1 1 0 		= 6
+ +	 0 0 1 		= 1   7
+ ------------
+     1 1 1      =  7 
+
+
+-----------
+
+0 + 0 = 0
+0 +	1 = 1
+1 + 0 = 1
+1 + 1 = 0 acarreo 1
+     
+
+     (1)
+   (1)1 1 0  = 6
+  +   0 1 0  = 2
+  ---------
+    1 0 0 0   = 8
+
+
+
+

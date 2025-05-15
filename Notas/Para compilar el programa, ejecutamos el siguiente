@@ -1,0 +1,41 @@
+Para compilar el programa, ejecutamos el siguiente comando:
+
+$ gcc hola_mundo.c
+Si el código del archivo contiene ningún error, se habrá creado un ejecutable llamado a.out. Para elegir el nombre con el que se creará el ejecutable, usamos la opción -o:
+
+$ gcc hola_mundo.c -o hola-mundo
+Ahora ya podemos ejecutar el programa:
+
+$ ./hola-mundo
+Hola!
+
+
+Posterior a escribir o codificar el algoritmo para ejecutar hacemos lo siguiente:
+
+Sintaxis de cmompilacion
+
+1. Escribir en el directorio donde se encunetra el archivo a compilar:
+ c:\Progs\C
+
+Compilar
+2. gcc <nombre_archivo.c>
+
+	Ej
+		gcc idiomas.c
+
+Si nuestro codigo no tiene errores, se generara un ejecutable llamado a.out Para elegir el nombre con el crea el ejecutables usamos la opcion -o
+
+3. gcc idiomas.c -o idiomas
+
+4. Para ejecutar nuestro archivoo compilado
+./<nombre_ejecutable>
+	Ej.
+		./idiomas
+
+
+el comando ls dentro de nuestra terminal nos permite listar o visualizar los archivos en la carpeta
+
+el camando cd
+nos permite cambiar de directorio				
+
+El comando pwd nos permite saber en que directorio nos econtramos

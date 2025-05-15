@@ -1,0 +1,18 @@
+Escribir un codigo en C con el siguiente algoritmo.
+
+Vamos a solicitar al usuario su edad y lo asignaremos a la variable "edad" esta es una variable entera
+
+int edad;
+
+Partiendo de la edasd escrita 
+
+Si edad <= 18 escribir
+	menor de edad
+
+si edad >= 18 pero menor 50
+	escribir "Adulto Joven"
+
+Si edad >= 51
+	escribir "Adulto mayor"
+
+	
